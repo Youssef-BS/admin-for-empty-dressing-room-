@@ -1,0 +1,42 @@
+body{
+background-image: url("https://cdn.wallpapersafari.com/88/38/tcZrNR.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+.login{
+    padding: 50px;
+    width: 30%;
+    margin:100px auto ;
+    text-align: center;
+    background-color: rgb(150, 224, 198);
+    border-radius: 24px;
+}
+
+.login input{
+    display: block;
+    margin:12px auto;
+    height: 25px;
+    border: none;
+    width: 35%;
+
+}
+
+.login input:placeholder-shown{
+    text-align: center;
+}
+.login button{
+    border: none;
+    background-color:aquamarine;
+    padding: 8px;
+    width: 15%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login button:hover{
+    letter-spacing: 3px;
+    background-color:rgb(0, 255, 170);
+}
