@@ -7,7 +7,7 @@ const Login = () => {
   const { login } = useContext(AuthContext);
   const [email , setEmail] = useState("");
   const [password , setPassword] = useState("");
-
+  
   const handleLogin = async (event)=>{
     event.preventDefault();
     // window.location.reload(false);
@@ -16,8 +16,8 @@ const Login = () => {
   return (
     <div className='login'>
     <h1>Login pour admin seulement</h1>
-    <input type="text" placeholder='email' onChange={(e)=> setEmail(e.target.value)} />
-    <input type="password" placeholder='password' onChange={(e)=> setPassword(e.target.value)} />
+    <input type="text" placeholder='email'  onChange={(e)=>setEmail(e.target.value)}/>
+    <input type="password" placeholder='password' onChange={(e)=>setPassword(e.target.value)} />
     <button>Login</button>
     </div>
   )
