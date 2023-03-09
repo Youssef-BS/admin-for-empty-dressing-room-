@@ -20,6 +20,11 @@ const Navbar = () => {
             <li>message recus par les clients</li>
         </ul>
         <div className='profile'>
+          <span>
+            <h5>admin</h5>
+          <h4>{currentUser.user.name}</h4>
+          </span>
+          
           <img src ={currentUser.user.photoP.url} alt="" />
           <p onClick={handleLogout}>Logout</p>
         </div>

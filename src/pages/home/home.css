@@ -1,0 +1,10 @@
+.container{
+width: 80%;
+display: flex;
+margin:17px auto;
+justify-content: space-between;
+}
+
+.container div{
+    justify-content: space-between;
+}
