@@ -1,7 +1,15 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import "./navbar.css";
+import {AuthContext} from "../../context/authContext";
 
 const Navbar = () => {
+  const {currentUser} = useContext(AuthContext);
+  const {logout} = useContext(AuthContext);
+  const handleLogout = async (event)=>{
+    event.preventDefault();
+    window.location.reload(false);
+    await logout();
+   }
   return (
     <div className='navbar'>
         <h1>Home</h1>
@@ -11,6 +19,10 @@ const Navbar = () => {
             <li>Produits Vendus</li>
             <li>message recus par les clients</li>
         </ul>
+        <div className='profile'>
+          <img src ={currentUser.user.photoP.url} alt="" />
+          <p onClick={handleLogout}>Logout</p>
+        </div>
     </div>
   )
 }
