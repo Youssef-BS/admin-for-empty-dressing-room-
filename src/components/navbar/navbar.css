@@ -1,0 +1,20 @@
+.navbar{
+   margin: auto;
+    background-color: rgb(222, 255, 244);
+    height: 70px;
+    width: 80%;
+
+}
+ul{
+    position: absolute;
+    left: 25%;
+    top: 15px;
+}
+
+ul li{
+display: inline-block;
+margin-left: 18px;
+font-weight: 700;
+font-size: 18px;
+}
+
