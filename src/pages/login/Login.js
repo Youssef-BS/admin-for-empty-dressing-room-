@@ -1,6 +1,6 @@
-import React,{useEffect , useState , useContext} from 'react'
+import React,{ useState , useContext} from 'react'
 import "./login.css"
-import { AuthContext } from "../../context/authContext";
+import {AuthContext} from "../../context/authContext"
 
 
 const Login = () => {
@@ -18,7 +18,7 @@ const Login = () => {
     <h1>Login pour admin seulement</h1>
     <input type="text" placeholder='email'  onChange={(e)=>setEmail(e.target.value)}/>
     <input type="password" placeholder='password' onChange={(e)=>setPassword(e.target.value)} />
-    <button>Login</button>
+    <button onClick={handleLogin}>Login</button>
     </div>
   )
 }
