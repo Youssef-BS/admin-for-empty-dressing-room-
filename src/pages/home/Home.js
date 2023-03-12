@@ -6,6 +6,7 @@ import axios from "axios"
 const Home = () => {
   const [products, setProducts] = useState([]);
   const [users , setUsers] = useState([]);
+  const [produitAttents , setProduitAttents] = useState([])
 
   
   useEffect(() => {
@@ -24,7 +25,15 @@ const Home = () => {
  }
  fetchUsers()
  },[])
- console.log(users)
+
+ useEffect(()=>{
+ const fetchProduitEnattents = async ()=>{
+ const res = await axios.get("http://localhost:4000/api/produits/notfetched/select");
+ setProduitAttents(res.data)
+ }
+ fetchProduitEnattents();
+ },[])
+ console.log(produitAttents)
   return (
     <>
   <Navbar />
@@ -94,11 +103,41 @@ const Home = () => {
       <p className='view-more'>Voir plus..</p>
     </div>
     <div className='product_vendu'>
-      <h2>Produits vendus</h2>
+      <h2>Produits en attente</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th>Titre</th>
+            <th>Marque</th>
+            <th>Prix</th>
+          </tr>
+        </thead>
+        <tbody>
+          {produitAttents.map((product, index) => 
+            index < 10 && (
+              <tr key={product._id}>
+                <td>
+                  <img
+                    className='product-photo'
+                    src={product.photoProduit.url}
+                    alt='Product'
+                  />
+                </td>
+                <td>{product.title}</td>
+                <td>{product.marque}</td>
+                <td>
+                  <b>{product.price} DT</b>
+                </td>
+              </tr>
+            )
+          )}
+        </tbody>
+      </table>
       <p className='view-more'>Voir plus..</p>
     </div>
     <div className='product_en_attend'>
-      <h2>Produits en attente</h2>
+      <h2>Produits Vendu</h2>
       <p className='view-more'>Voir plus..</p>
     </div>
   </div>
