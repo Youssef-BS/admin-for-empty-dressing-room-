@@ -3,6 +3,7 @@ import Home from "./pages/home/Home.js";
 import { AuthContext } from './context/authContext';
 import { useContext } from "react";
 import { createBrowserRouter, RouterProvider, Outlet , Navigate  } from "react-router-dom";
+import VoirAricle from "./pages/voirarticle/VoirAricle";
 function App() {
   const { currentUser } = useContext(AuthContext);
   const Layout = () => {
@@ -33,6 +34,14 @@ function App() {
           element :(
             <ProtectedRoute>
               <Home />
+            </ProtectedRoute>
+          ) ,
+        },
+        {
+          path: "/voirproduit/:idproduit",
+          element :(
+            <ProtectedRoute>
+              <VoirAricle />
             </ProtectedRoute>
           ) ,
         },

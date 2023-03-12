@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import "./home.css"
 import axios from "axios"
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -34,6 +35,7 @@ const Home = () => {
  fetchProduitEnattents();
  },[])
  console.log(produitAttents)
+
   return (
     <>
   <Navbar />
@@ -129,6 +131,7 @@ const Home = () => {
                 <td>
                   <b>{product.price} DT</b>
                 </td>
+               <td><b style={{cursor:"pointer"}}><Link to={"/voirproduit/"+product._id}>Voir article</Link></b></td> 
               </tr>
             )
           )}
