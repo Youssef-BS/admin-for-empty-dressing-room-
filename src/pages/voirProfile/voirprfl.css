@@ -1,0 +1,47 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product {
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .product img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+
+  
+  .edit,
+  .delete {
+    cursor: pointer;
+    color: #0077cc;
+    font-size: 14px;
+  }
+  
+  .sta p{
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  .stat {
+  margin: 15px;
+  display: flex;
+  }
+
+  .stat img{
+    width: 50px;
+    margin-left: 8px;
+    border-radius: 50%;
+  }
+  .stat p{
+    margin-left: 8px;
+  }

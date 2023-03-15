@@ -97,6 +97,7 @@ const Home = () => {
                 </td>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
+                <td><Link to={"/voirprofile/"+user._id}>Voir Profile</Link> </td>
               </tr>
             )
           )}

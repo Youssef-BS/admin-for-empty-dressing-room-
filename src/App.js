@@ -4,6 +4,7 @@ import { AuthContext } from './context/authContext';
 import { useContext } from "react";
 import { createBrowserRouter, RouterProvider, Outlet , Navigate  } from "react-router-dom";
 import VoirAricle from "./pages/voirarticle/VoirAricle";
+import VoirProfile from "./pages/voirProfile/VoirProfile";
 function App() {
   const { currentUser } = useContext(AuthContext);
   const Layout = () => {
@@ -42,6 +43,14 @@ function App() {
           element :(
             <ProtectedRoute>
               <VoirAricle />
+            </ProtectedRoute>
+          ) ,
+        },
+        {
+          path: "/voirprofile/:id",
+          element :(
+            <ProtectedRoute>
+              <VoirProfile />
             </ProtectedRoute>
           ) ,
         },
