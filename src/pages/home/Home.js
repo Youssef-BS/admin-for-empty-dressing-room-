@@ -67,12 +67,15 @@ const Home = () => {
                 <td>
                   <b>{product.produit.price} DT</b>
                 </td>
+                <td>
+                  <Link to={"/voirproduit/"+product.produit._id}>voir article</Link>
+                </td>
               </tr>
             )
           )}
         </tbody>
       </table>
-      <p className='view-more'>Voir plus..</p>
+      <p className='view-more'><Link to ="/tousproduits">Voir plus..</Link></p>
     </div>
     <div className='users'>
       <h2>Utilisateurs</h2>

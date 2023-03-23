@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { createBrowserRouter, RouterProvider, Outlet , Navigate  } from "react-router-dom";
 import VoirAricle from "./pages/voirarticle/VoirAricle";
 import VoirProfile from "./pages/voirProfile/VoirProfile";
+import TousProduits from "./pages/tousProduits/tousProduits";
 function App() {
   const { currentUser } = useContext(AuthContext);
   const Layout = () => {
@@ -51,6 +52,14 @@ function App() {
           element :(
             <ProtectedRoute>
               <VoirProfile />
+            </ProtectedRoute>
+          ) ,
+        },
+        {
+          path: "/tousproduits",
+          element :(
+            <ProtectedRoute>
+              <TousProduits />
             </ProtectedRoute>
           ) ,
         },

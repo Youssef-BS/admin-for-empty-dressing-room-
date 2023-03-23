@@ -1,6 +1,7 @@
 import React,{useContext} from 'react';
 import "./navbar.css";
 import {AuthContext} from "../../context/authContext";
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
   const {currentUser} = useContext(AuthContext);
@@ -12,9 +13,9 @@ const Navbar = () => {
    }
   return (
     <div className='navbar'>
-        <h1>Home</h1>
+        <h1 style={{cursor : "pointer"}}><Link to="/home">Home</Link></h1>
         <ul className='liste'>
-            <li>Tous Produits</li>
+            <li><Link to="/tousproduits">Tous Produits</Link></li>
             <li>Produit en attends</li>
             <li>Produits Vendus</li>
             <li>message recus par les clients</li>
