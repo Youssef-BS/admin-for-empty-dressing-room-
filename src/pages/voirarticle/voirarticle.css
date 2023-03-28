@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color:rgb(243, 255, 251);
   }
   
   .contentt {
@@ -17,15 +18,17 @@
   }
   
   .static {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 500px;
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
   }
   
   ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: auto;
+    margin: auto;
     text-align: center;
   }
   
@@ -101,9 +104,20 @@ border: none;
 .update-no{
   margin: auto;
 }
-.update-no,.oui ,.non button{
-  cursor: pointer;
+.update-no button{
+cursor: pointer;
  background-color: rgb(73, 255, 194);
  border: none;
  margin: 8px;
+}
+.nonc{
+  cursor: pointer;
+  background-color: rgb(73, 255, 194);
+  border: none;
+  margin: 8px;
+}
+
+.oui{
+  border: none;
+  background-color: rgb(73, 255, 194);
 }

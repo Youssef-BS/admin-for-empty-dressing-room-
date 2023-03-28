@@ -52,6 +52,7 @@ return (
         <p><b>{item.price} DT</b></p>
         <div className='Modification'>
         <span className='delete'>Supprimer</span>
+        <span className='delete' style={{marginLeft:"8px"}}>consulter produit</span>
         </div>
         </div>
 </div>

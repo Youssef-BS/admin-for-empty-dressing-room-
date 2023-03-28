@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, Outlet , Navigate  } from "react-r
 import VoirAricle from "./pages/voirarticle/VoirAricle";
 import VoirProfile from "./pages/voirProfile/VoirProfile";
 import TousProduits from "./pages/tousProduits/tousProduits";
+import ProduitEnattends from "./pages/produitenattends/ProduitEnattends";
 function App() {
   const { currentUser } = useContext(AuthContext);
   const Layout = () => {
@@ -52,6 +53,14 @@ function App() {
           element :(
             <ProtectedRoute>
               <VoirProfile />
+            </ProtectedRoute>
+          ) ,
+        },
+        {
+          path: "/produitsenattends",
+          element :(
+            <ProtectedRoute>
+              <ProduitEnattends />
             </ProtectedRoute>
           ) ,
         },

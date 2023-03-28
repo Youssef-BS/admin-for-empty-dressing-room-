@@ -18,16 +18,10 @@ ul li{
 display: inline-block;
 margin-left: 18px;
 font-weight: 700;
-font-size: 18px;
+font-size: 16px;
 transition: 0.5s;
 cursor:pointer;
 }
-
-ul li:hover{
-    background-color: aquamarine;
-    letter-spacing: 2px;
-}
-
 .profile{
     
     display: flex;
