@@ -5,13 +5,14 @@
   
   h2 {
     font-size: 28px;
-    margin-bottom: 24px;
+    margin-left: 100px;
+    margin-top: 12px;
   }
   
   table {
     border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 32px;
+    width: 70%;
+    margin: 32px 32px 10px 100px;
   }
   
   th,

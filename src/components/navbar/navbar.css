@@ -1,42 +1,44 @@
-.navbar{
-    margin : 0 ;
-    background-color: rgb(222, 255, 244);
-    height: 100%;
-    width: 20%;
-    /* display: flex; */
-    position: fixed;
-    display: block;
-
-
+.sidebar {
+  flex: 1;
+ height: 100vh;
+  background-color: rgb(251, 251, 255);
+  position: fixed;
+  width: 20%;
 }
 
-.content {
- display: flex;
- justify-content: space-between;
+.sidebarWrapper {
+  padding: 20px;
+  color: #555;
 }
 
-ul{
-    margin: auto;   
-    text-align: center;
-    margin: auto;
+.sidebarMenu {
+  margin-bottom: 10px;
 }
 
-ul li {
-    display: block;
-    margin-top: 15px;
-}
-.profile{
-    display: flex;
-    align-items: center;
-}
-.profile img{
-    height: 50px;
-    border-radius: 50%;
-    margin-left: 8px;
-
+.sidebarTitle {
+  font-size: 13px;
+  color: rgb(187, 186, 186);
 }
 
-.profile h4 {
-font-size: 14px;
+.sidebarList {
+  list-style: none;
+  padding: 5px;
 }
 
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: rgb(240, 240, 255);
+}
+
+.sidebarIcon{
+    margin-right: 5px;
+    font-size: 20px !important;
+}
