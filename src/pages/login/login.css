@@ -1,20 +1,20 @@
 
 .login{
     padding: 50px;
-    width: 30%;
+    width: 25%;
     margin:100px auto ;
     text-align: center;
-    background-color: rgb(150, 224, 198);
-    border-radius: 24px;
-    box-shadow: 10px 5px 5px rgb(97, 97, 97);
+    background-color: rgb(225, 255, 245);
+    border-radius: 12px;
+    box-shadow: 10px 5px 5px rgb(205, 205, 205);
 }
 
 .login input{
     display: block;
     margin:12px auto;
-    height: 25px;
-    border: none;
-    width: 35%;
+    /* height: 25px; */
+    /* border: none; */
+    width: 80%;
 
 }
 
@@ -23,14 +23,14 @@
 }
 .login button{
     border: none;
-    background-color:aquamarine;
+    background-color: #1abc9c;
     padding: 8px;
-    width: 15%;
+    width: 20%;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .login button:hover{
-    letter-spacing: 3px;
-    background-color:rgb(0, 255, 170);
+    
+    background-color:#1ccca9;
 }

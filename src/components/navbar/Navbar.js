@@ -13,22 +13,27 @@ const Navbar = () => {
    }
   return (
     <div className='navbar'>
-        <h1 style={{cursor : "pointer"}}><Link to="/home" style={{textDecoration : "none" , color : 'black'}}>Home</Link></h1>
-        <ul className='liste'>
-            <li><Link to="/tousproduits" style={{textDecoration : "none" , color : 'black' , fontSize : '16px'}}>Produits Accepter</Link></li>
-            <li><Link to="/produitsenattends" style={{textDecoration : "none" , color : 'black'}}>Produit En Attends</Link></li>
-            <li>Produits Vendus</li>
-            <li>message recus par les clients</li>
-        </ul>
+      <div className='content'>
+  
+      <h1 style={{cursor : "pointer"}}><Link to="/home" style={{textDecoration : "none" , color : 'black'}}>Home</Link></h1>
         <div className='profile'>
           <span>
-            <h5>admin</h5>
           <h4>{currentUser.user.name}</h4>
           </span>
           
           <img src ={currentUser.user.photoP.url} alt="" />
-          <p onClick={handleLogout}>Logout</p>
+          
         </div>
+
+      </div>
+   
+        <ul className='liste'>
+            <li><Link to="/tousproduits" style={{textDecoration : "none" , color : "black"}}>Produits Accepter</Link></li>
+            <li><Link to="/produitsenattends" style={{textDecoration : "none" , color : 'black'}}>Produit En Attends</Link></li>
+            <li>Produits Vendus</li>
+            <li>message recus par les clients</li>
+        </ul>
+        <p onClick={handleLogout}>Logout</p>
     </div>
   )
 }
