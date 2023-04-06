@@ -1,5 +1,4 @@
 import { useState , useEffect } from 'react';
-import Navbar from '../../components/sidebar/Sidebar';
 import axios from "axios";
 import {Link} from "react-router-dom"
 const TousProduits = () => {
@@ -18,7 +17,7 @@ const TousProduits = () => {
       
   return (
     <>
-    <Navbar />
+    
     {loading ? (<p style={{textAlign : "center"}}>Loading...</p>) : (
     <div className='container'>
       <table className = 'product-full-width'>

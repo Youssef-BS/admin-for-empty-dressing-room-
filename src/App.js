@@ -8,12 +8,15 @@ import VoirAricle from "./pages/voirarticle/VoirAricle";
 import VoirProfile from "./pages/voirProfile/VoirProfile";
 import TousProduits from "./pages/tousProduits/tousProduits";
 import ProduitEnattends from "./pages/produitenattends/ProduitEnattends";
+import Utilisateur from "./pages/urilisateurs/Utilisateur";
+import Sidebar from "./components/sidebar/Sidebar"; 
 
 function App() {
   const { currentUser } = useContext(AuthContext);
   const Layout = () => {
     return (
       <div className="app">
+        <Sidebar />
         <Outlet />
       </div>
     );
@@ -71,6 +74,14 @@ function App() {
           element :(
             <ProtectedRoute>
               <TousProduits />
+            </ProtectedRoute>
+          ) ,
+        },
+        {
+          path: "/utilisateur",
+          element :(
+            <ProtectedRoute>
+              <Utilisateur />
             </ProtectedRoute>
           ) ,
         },

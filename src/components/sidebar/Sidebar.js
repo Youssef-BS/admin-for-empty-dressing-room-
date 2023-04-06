@@ -16,7 +16,7 @@ import {
   Report,
 } from "@material-ui/icons";
 
-const Navbar = () => {
+const Sidebar = () => {
   const {currentUser} = useContext(AuthContext);
   const {logout} = useContext(AuthContext);
   const handleLogout = async (event)=>{
@@ -47,12 +47,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Quick Menu</h3>
+          <h3 className="sidebarTitle">Menu</h3>
           <ul className="sidebarList">
-            <Link to="/users" className="link">
+            <Link to="/utilisateur" className="link">
               <li className="sidebarListItem">
                 <PermIdentity className="sidebarIcon" />
-                Users
+                Utilisateur
               </li>
             </Link>
             <Link to="/tousproduits" className="link">
@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link to="/produitsenattends" className="link">
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />
-                Produits en atends
+                Produits en attends
               </li>
             </Link>
             <li className="sidebarListItem">
@@ -116,4 +116,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Sidebar

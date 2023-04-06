@@ -2,7 +2,7 @@ import React,{ useEffect, useState} from 'react'
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import "./voirprfl.css"
-import Navbar from '../../components/sidebar/Sidebar';
+
 
 
 
@@ -30,7 +30,7 @@ fetchUser()
 
 return (
   <>
-<Navbar />
+
 {/* <img src={user.photoP.url} alt=''/> */}
 <h3 style={{display :"block" , textAlign : "center"}}>Profile de {user.name}</h3>
 <div className='stat'>

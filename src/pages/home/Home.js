@@ -39,7 +39,6 @@ const Home = () => {
 
   return (
     <>
-  <Navbar />
   <Chart data={userData} title="User Analytics" grid dataKey="Active User"/>
   <div className='container'>
   <div className='users'>
