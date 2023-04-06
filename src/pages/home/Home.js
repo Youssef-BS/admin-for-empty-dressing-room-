@@ -53,7 +53,7 @@ const Home = () => {
         </thead>
         <tbody>
           {users.map((user, index) => 
-            index < 10 && (
+            index < 5 && (
               <tr key={user._id}>
                 <td>
                   <img
@@ -85,7 +85,7 @@ const Home = () => {
         </thead>
         <tbody>
           {products.map((product, index) => 
-            index < 10 && (
+            index < 5 && (
               <tr key={product.produit._id}>
                 <td>
                   <img
@@ -123,7 +123,7 @@ const Home = () => {
         </thead>
         <tbody>
           {produitAttents.map((product, index) => 
-            index < 10 && (
+            index < 5 && (
               <tr key={product._id}>
                 <td>
                   <img
