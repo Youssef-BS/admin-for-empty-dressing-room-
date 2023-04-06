@@ -1,6 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import Navbar from '../../components/navbar/Navbar'
-import "./home.css"
+import Navbar from '../../components/sidebar/Sidebar'
 import axios from "axios"
 import { Link } from 'react-router-dom'
 import { userData } from "../../dummyData";
@@ -72,7 +71,6 @@ const Home = () => {
           )}
         </tbody>
       </table>
-      <p className='view-more' >Voir plus..</p>
     </div>
     <div className='products'>
       <h2>Les produits Accepter</h2>
@@ -109,49 +107,9 @@ const Home = () => {
           )}
         </tbody>
       </table>
-      <p className='view-more'><Link to ="/tousproduits">Voir plus..</Link></p>
     </div>
-  
-    <div className='product_vendu'>
-      <h2>Produits en attente</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Photo</th>
-            <th>Titre</th>
-            <th>Marque</th>
-            <th>Prix</th>
-          </tr>
-        </thead>
-        <tbody>
-          {produitAttents.map((product, index) => 
-            index < 5 && (
-              <tr key={product._id}>
-                <td>
-                  <img
-                    className='product-photo'
-                    src={product.photoProduit.url}
-                    alt='Product'
-                  />
-                </td>
-                <td>{product.title}</td>
-                <td>{product.marque}</td>
-                <td>
-                  <b>{product.price} DT</b>
-                </td>
-               <td><b style={{cursor:"pointer"}}><Link to={"/voirproduit/"+product._id} style={{textDecoration : "none" , color : 'black'}}>Voir produit</Link></b></td> 
-              </tr>
-            )
-          )}
-        </tbody>
-      </table>
-      <p className='view-more'>Voir plus..</p>
-    </div>
-    <div className='product_en_attend'>
-      <h2>Produits Vendu</h2>
-      <p className='view-more'>Voir plus..</p>
-    </div>
-  </div>
+ </div> 
+    
 </>
 
   

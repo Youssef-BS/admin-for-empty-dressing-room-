@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams , useNavigate  } from "react-router-dom";
 import "./voirarticle.css";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/sidebar/Sidebar";
 
 const VoirArticle = () => {
   const navigate = useNavigate();

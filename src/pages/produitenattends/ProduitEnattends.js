@@ -1,5 +1,5 @@
 import React , {useEffect , useState} from 'react'
-import Navbar from '../../components/navbar/Navbar'
+import Navbar from '../../components/sidebar/Sidebar'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
@@ -18,9 +18,8 @@ const ProduitEnattends = () => {
   return (
     <>
     <Navbar />
-    <div className='product_vendu'>
-      <h2>Produits en attente</h2>
-      <table>
+    <div className='container'>
+      <table className = 'product-full-width'>
         <thead>
           <tr>
             <th>Photo</th>

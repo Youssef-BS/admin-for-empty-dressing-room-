@@ -1,0 +1,123 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-left: 100px;
+    margin-top: 24px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 450px;
+    margin: 42px 32px 10px 70px;
+    
+  }
+  
+  th,
+  td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .product-photo,
+  .user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .view-more {
+    text-align: center;
+    cursor: pointer;
+    color: blue;
+    margin-top: 32px;
+    font-size: 18px;
+  }
+  
+  .product,
+  .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .product td:first-child,
+  .user td:first-child {
+    width: 60px;
+  }
+  
+  .product td:last-child,
+  .product td:last-child b {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1abc9c;
+  }
+  
+  .product-full-width {
+    width: 700px;
+  }
+
+  /* side bar design */
+
+  .sidebar {
+    flex: 1;
+   height: 100vh;
+    background-color: rgb(251, 251, 255);
+    position: fixed;
+    width: 20%;
+  }
+  
+  .sidebarWrapper {
+    padding: 20px;
+    color: #555;
+  }
+  
+  .sidebarMenu {
+    margin-bottom: 10px;
+  }
+  
+  .sidebarTitle {
+    font-size: 13px;
+    color: rgb(187, 186, 186);
+  }
+  
+  .sidebarList {
+    list-style: none;
+    padding: 5px;
+  }
+  
+  .sidebarListItem {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #1abc9c;
+    text-decoration: none;
+  }
+  
+  .sidebarListItem.active,
+  .sidebarListItem:hover {
+    background-color: rgb(240, 240, 255);
+  }
+  
+  .sidebarIcon{
+      margin-right: 5px;
+      font-size: 20px !important;
+  }
+
+  .link {
+    text-decoration: none;
+  }
