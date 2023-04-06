@@ -1,6 +1,8 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   h2 {
@@ -11,8 +13,9 @@
   
   table {
     border-collapse: collapse;
-    width: 70%;
+    width: 40%;
     margin: 32px 32px 10px 100px;
+    
   }
   
   th,

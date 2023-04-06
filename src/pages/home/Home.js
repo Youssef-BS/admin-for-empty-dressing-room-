@@ -3,6 +3,8 @@ import Navbar from '../../components/navbar/Navbar'
 import "./home.css"
 import axios from "axios"
 import { Link } from 'react-router-dom'
+import { userData } from "../../dummyData";
+import Chart from '../../components/charts/Chart'
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -39,7 +41,7 @@ const Home = () => {
   return (
     <>
   <Navbar />
-
+  <Chart data={userData} title="User Analytics" grid dataKey="Active User"/>
   <div className='container'>
   <div className='users'>
       <h2>Utilisateurs</h2>

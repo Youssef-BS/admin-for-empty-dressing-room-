@@ -1,0 +1,13 @@
+.chart {
+    position: relative;
+    top: 7px;
+    left: 24%;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    width: 70%;
+  }
+  
+  .chartTitle {
+    margin-bottom: 20px;
+  }
