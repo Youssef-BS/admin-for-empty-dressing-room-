@@ -29,7 +29,7 @@ fetchUser()
 },[])
 
 return (
-  <>
+  <div className='utilisateur'>
 
 {/* <img src={user.photoP.url} alt=''/> */}
 <h3 style={{display :"block" , textAlign : "center"}}>Profile de {user.name}</h3>
@@ -61,7 +61,7 @@ return (
     
     ))}
         </div>
-  </>
+  </div>
   )
 }
 
