@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import {AuthContext} from "../../context/authContext";
-import {Link} from "react-router-dom"
+import {Link , useNavigate} from "react-router-dom"
 import {
   LineStyle,
   Timeline,
@@ -17,13 +17,14 @@ import {
 } from "@material-ui/icons";
 
 const Sidebar = () => {
-  const {currentUser} = useContext(AuthContext);
+  const navigate = useNavigate();
   const {logout} = useContext(AuthContext);
+  
   const handleLogout = async (event)=>{
+    navigate("/");
     event.preventDefault();
-    window.location.reload(false);
     await logout();
-   }
+}
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
@@ -108,6 +109,10 @@ const Sidebar = () => {
             <li className="sidebarListItem">
               <Report className="sidebarIcon" />
               Reports
+            </li>
+            <li className="sidebarListItem" onClick={handleLogout}>
+              <Report className="sidebarIcon"/>
+              Deconnection
             </li>
           </ul>
         </div>

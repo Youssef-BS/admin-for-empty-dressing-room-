@@ -16,7 +16,7 @@ function App() {
   const Layout = () => {
     return (
       <div className="app">
-        <Sidebar />
+        
         <Outlet />
       </div>
     );
@@ -41,6 +41,7 @@ function App() {
           path: "/home",
           element :(
             <ProtectedRoute>
+              <Sidebar />
               <Home />
             </ProtectedRoute>
           ) ,
@@ -49,6 +50,7 @@ function App() {
           path: "/voirproduit/:idproduit",
           element :(
             <ProtectedRoute>
+              <Sidebar />
               <VoirAricle />
             </ProtectedRoute>
           ) ,
@@ -57,6 +59,7 @@ function App() {
           path: "/voirprofile/:id",
           element :(
             <ProtectedRoute>
+              <Sidebar />
               <VoirProfile />
             </ProtectedRoute>
           ) ,
@@ -65,6 +68,7 @@ function App() {
           path: "/produitsenattends",
           element :(
             <ProtectedRoute>
+              <Sidebar />
               <ProduitEnattends />
             </ProtectedRoute>
           ) ,
@@ -73,6 +77,7 @@ function App() {
           path: "/tousproduits",
           element :(
             <ProtectedRoute>
+              <Sidebar />
               <TousProduits />
             </ProtectedRoute>
           ) ,
@@ -81,6 +86,7 @@ function App() {
           path: "/utilisateur",
           element :(
             <ProtectedRoute>
+              <Sidebar />
               <Utilisateur />
             </ProtectedRoute>
           ) ,
