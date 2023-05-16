@@ -100,7 +100,7 @@ const Sidebar = () => {
           <ul className="sidebarList">
             <li className="sidebarListItem">
               <WorkOutline className="sidebarIcon" />
-              Manage
+              <Link to="/commands" className='link'>Les commandes</Link>
             </li>
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />

@@ -126,3 +126,8 @@
   .utilisateur{
     padding:50px 400px;
   }
+
+  /* command */
+  .command{
+    text-align: center;
+  }

@@ -10,6 +10,7 @@ import TousProduits from "./pages/tousProduits/tousProduits";
 import ProduitEnattends from "./pages/produitenattends/ProduitEnattends";
 import Utilisateur from "./pages/urilisateurs/Utilisateur";
 import Sidebar from "./components/sidebar/Sidebar"; 
+import Command from "./pages/command/Command";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -88,6 +89,15 @@ function App() {
             <ProtectedRoute>
               <Sidebar />
               <Utilisateur />
+            </ProtectedRoute>
+          ) ,
+        },
+        {
+          path: "/commands",
+          element :(
+            <ProtectedRoute>
+              <Sidebar />
+              <Command />
             </ProtectedRoute>
           ) ,
         },
