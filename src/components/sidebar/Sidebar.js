@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import {AuthContext} from "../../context/authContext";
-import {Link , useNavigate} from "react-router-dom"
+import {Link , useNavigate} from "react-router-dom";
 import {
   LineStyle,
   Timeline,
