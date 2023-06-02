@@ -105,6 +105,11 @@ function App() {
       ],
     },
   ]);
+
+// if(currentUser){
+//   navigate("/home");
+// }
+
   return (
     
     <div>
