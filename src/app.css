@@ -127,6 +127,22 @@
     padding:50px 400px;
   }
 
+  .Gerer{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+ .modifier{
+  color: #1abc9c;
+  cursor: pointer;
+  margin-left: 8px;
+ }
+ .supprimer{
+  color: red !important;
+  cursor: pointer;
+ }
   /* command */
   .command{
     text-align: center;

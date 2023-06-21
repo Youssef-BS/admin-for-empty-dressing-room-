@@ -11,6 +11,9 @@ const [users , setUsers] = useState([])
         }
         fetchUsers()
         },[])
+
+
+
   return (
     <div className='container'>
     <table className='product-full-width'>
@@ -19,7 +22,7 @@ const [users , setUsers] = useState([])
           <th>Photo</th>
           <th>Nom</th>
           <th>Email</th>
-          <th>consulter</th>
+          <th>Consulter</th>
         </tr>
       </thead>
       <tbody>
@@ -45,4 +48,4 @@ const [users , setUsers] = useState([])
   )
 }
 
-export default Utilisateur
+export default Utilisateur ;
